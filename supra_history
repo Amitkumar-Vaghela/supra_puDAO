@@ -1,0 +1,217 @@
+Local: (2025-01-18 10:01:54.768507523 +00:00)	 Utc: (2025-01-18 10:01:54.769331582 UTC)
+
+CMD:
+GenerateProfile(GenerateProfileArgs { name: Some("supra_1"), force_pass: false })
+Output:
+-------------------------- Profile List ---------------------------------
+	(*) supra_1
+SmrPublicKey { account_address: "0xac339dac5a43dc9720ada90f097a8aeda402a951be4b1aa5702ec971a0287fbb", ed25519_public_key: 935a15b17a1bd5fc54dc16d473ba8a423fbfac3d40a0557196bb052b09b7710a }
+-------------------------------------------------------------------------
+
+
+Local: (2025-01-18 10:02:55.479128809 +00:00)	 Utc: (2025-01-18 10:02:55.479147983 UTC)
+
+CMD:
+ImportProfile(ImportProfile { name: "supra_1", private_key: "Amit@777", force_pass: false })
+Output:
+Hex decode error: Invalid character 'm' at position 1
+Local: (2025-01-18 10:05:17.423778654 +00:00)	 Utc: (2025-01-18 10:05:17.423815252 UTC)
+
+CMD:
+ImportProfile(ImportProfile { name: "supra_1", private_key: "0xac339dac5a43dc9720ada90f097a8aeda402a951be4b1aa5702ec971a0287fbb", force_pass: false })
+Output:
+SmrProfile: AlreadyExists("supra_1")
+Local: (2025-01-18 10:07:33.886456498 +00:00)	 Utc: (2025-01-18 10:07:33.886482608 UTC)
+
+CMD:
+ListProfile(ListProfileArgs { reveal_secrets: false })
+Output:
+-------------------------- Profile List ---------------------------------
+	(*) supra_1
+SmrPublicKey { account_address: "0xac339dac5a43dc9720ada90f097a8aeda402a951be4b1aa5702ec971a0287fbb", ed25519_public_key: 935a15b17a1bd5fc54dc16d473ba8a423fbfac3d40a0557196bb052b09b7710a }
+-------------------------------------------------------------------------
+
+
+Local: (2025-01-18 10:07:47.648219478 +00:00)	 Utc: (2025-01-18 10:07:47.648246349 UTC)
+
+CMD:
+ListProfile(ListProfileArgs { reveal_secrets: true })
+Output:
+	(*) supra_1
+ed25519_secret_key: 6f1d00c0a9a89a0d35b5b2ea5eb53fc152377dc7e96eb6dee6e36a03d1b6644f
+SmrPublicKey { account_address: "0xac339dac5a43dc9720ada90f097a8aeda402a951be4b1aa5702ec971a0287fbb", ed25519_public_key: 935a15b17a1bd5fc54dc16d473ba8a423fbfac3d40a0557196bb052b09b7710a }
+
+
+
+Local: (2025-01-18 10:09:36.937142276 +00:00)	 Utc: (2025-01-18 10:09:36.937181395 UTC)
+
+CMD:
+AccountTool::FundWithFaucet
+Output:
+{
+  "Accepted": "0xcbd9ec4cc821005201a5f0fbc2807c9d045f66fa27c2b0219ca0619d9ab660c6"
+}
+
+
+Local: (2025-01-18 10:11:29.381918876 +00:00)	 Utc: (2025-01-18 10:11:29.382000682 UTC)
+
+CMD:
+AccountTool::FundWithFaucet
+Output:
+{
+  "Accepted": "0x6c27d0a0618ca9c17ab7a70390e3f8877e845ec52350d12ba52b8e8a953b7621"
+}
+
+
+Local: (2025-01-18 10:22:53.023603099 +00:00)	 Utc: (2025-01-18 10:22:53.023714558 UTC)
+
+CMD:
+Init
+Output:
+{
+  "Result": "Success"
+}
+
+
+Local: (2025-01-18 10:32:00.266820152 +00:00)	 Utc: (2025-01-18 10:32:00.266940931 UTC)
+
+CMD:
+Compile
+Output:
+{
+  "Result": []
+}
+
+
+Local: (2025-01-18 10:32:33.270982778 +00:00)	 Utc: (2025-01-18 10:32:33.271085821 UTC)
+
+CMD:
+Test
+Output:
+{
+  "Result": "Success"
+}
+
+
+Local: (2025-01-18 10:35:54.158036506 +00:00)	 Utc: (2025-01-18 10:35:54.158207311 UTC)
+
+CMD:
+Publish
+Output:
+General: Move compilation failed: Unable to find package manifest in '/supra/configs/move_workspace/<PROJECT_NAME>' or in its parents
+Local: (2025-01-18 10:36:34.754307355 +00:00)	 Utc: (2025-01-18 10:36:34.754351750 UTC)
+
+CMD:
+Publish
+Output:
+SmrProfile: KeyNotFound("supra")
+Local: (2025-01-18 10:37:02.046564092 +00:00)	 Utc: (2025-01-18 10:37:02.046597077 UTC)
+
+CMD:
+Publish
+Output:
+SmrProfile: KeyNotFound("supra")
+Local: (2025-01-18 10:37:32.738168192 +00:00)	 Utc: (2025-01-18 10:37:32.738216991 UTC)
+
+CMD:
+Publish
+Output:
+SmrProfile: KeyNotFound("supra")
+Local: (2025-01-18 10:38:00.583845401 +00:00)	 Utc: (2025-01-18 10:38:00.583878047 UTC)
+
+CMD:
+Publish
+Output:
+SmrProfile: KeyNotFound("supra")
+Local: (2025-01-18 10:38:49.402272620 +00:00)	 Utc: (2025-01-18 10:38:49.402313715 UTC)
+
+CMD:
+Publish
+Output:
+SmrProfile: KeyNotFound("supra")
+Local: (2025-01-18 10:39:52.059263292 +00:00)	 Utc: (2025-01-18 10:39:52.059306485 UTC)
+
+CMD:
+Publish
+Output:
+{
+  "authenticator": {
+    "Move": {
+      "Ed25519": {
+        "public_key": "0x935a15b17a1bd5fc54dc16d473ba8a423fbfac3d40a0557196bb052b09b7710a",
+        "signature": "0x6497656a9c419042845602712454f6184248df44996d9e266c4480c320d57c0cf02473b2ab54801644e722af9f8d390e51dc01f45682f9d18364f687e564f009"
+      }
+    }
+  },
+  "block_header": {
+    "hash": "0xb52ad5fb704166817ecf91f58e983ee94995654d395d9e777fb1cd374f5c906e",
+    "height": 8356180,
+    "timestamp": {
+      "microseconds_since_unix_epoch": 1737196791502503,
+      "utc_date_time": "2025-01-18T10:39:51.502503+00:00"
+    }
+  },
+  "hash": "0xe04fb9268d6bcb3222103d616c1c63de654bc39fd3039ee4eb427a15232ec697",
+  "header": {
+    "chain_id": 6,
+    "expiration_timestamp": {
+      "microseconds_since_unix_epoch": 1737196817000000,
+      "utc_date_time": "2025-01-18T10:40:17+00:00"
+    },
+    "sender": {
+      "Move": "0xac339dac5a43dc9720ada90f097a8aeda402a951be4b1aa5702ec971a0287fbb"
+    },
+    "sequence_number": 0,
+    "gas_unit_price": 100,
+    "max_gas_amount": 500000
+  },
+  "payload": {
+    "Move": {
+      "type": "entry_function_payload",
+      "function": "0x1::code::publish_package_txn",
+      "type_arguments": [],
+      "arguments": [
+        "0x0d73757072615f7061636b6167650100000000000000004045314239394633384335364233453543393431413533323743463343423538343643423233464644324345364143423337303138383546313838343931383135bf011f8b08000000000002ff5d8fb10ec2300c44777f05cade04562446fa038c5585d2c6b455d538b29322fe9e040a428cef6cdf9d9b60fbd90ed882b70bee4e3b2529b0bd6eb282155926f26572d07bbd5760531c89252b4d0bd058e71845500a385cab3f21a077e8fb09455f8a75cd39e84e3cb7304cb1f88e3106391a93714c9dee6931671f99c2a3aa297967632e606c8824554f8c3a2f2a605ccb714e5420a97313177c6f2db4a2b97d82cceba5eacb6a2bfadbad8527a9a910e90a010000000300000000000000000000000000000000000000000000000000000000000000010b4170746f735374646c696200000000000000000000000000000000000000000000000000000000000000010a4d6f76655374646c696200000000000000000000000000000000000000000000000000000000000000010e53757072614672616d65776f726b00",
+        []
+      ]
+    }
+  },
+  "output": {
+    "Move": {
+      "gas_used": 673,
+      "events": [
+        {
+          "guid": {
+            "creation_number": "0",
+            "account_address": "0x0"
+          },
+          "sequence_number": "0",
+          "type": "0x1::code::PublishPackage",
+          "data": {
+            "code_address": "0xac339dac5a43dc9720ada90f097a8aeda402a951be4b1aa5702ec971a0287fbb",
+            "is_upgrade": false
+          }
+        },
+        {
+          "guid": {
+            "creation_number": "0",
+            "account_address": "0x0"
+          },
+          "sequence_number": "0",
+          "type": "0x1::transaction_fee::FeeStatement",
+          "data": {
+            "execution_gas_units": "4",
+            "io_gas_units": "67",
+            "storage_fee_quants": "60240",
+            "storage_fee_refund_quants": "0",
+            "total_charge_gas_units": "673"
+          }
+        }
+      ],
+      "vm_status": "Executed successfully"
+    }
+  },
+  "status": "Success"
+}
+
+
